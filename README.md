@@ -1,26 +1,10 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+#THE OLD MONKEES: <br>
+This project work, "THE OLD MONKEES" was written in partial fulfillment of the requirements for user centric frontend development.
+It intends to provide a forum for interaction between "The Monkees", which is 1960s Rock Band and their existing and prospective fan base. In pursuiant of this objective, it provides facilities,
+and in itself serve as a showcase for their music/songs, pictures and videos. It also serve as a forum to fraternize with exiting members of their fan club and a callout to fans who may wish to sign up to
+their services.<br>
+In addition, the Old Monkees has utilized current technologies of HTML5 to help publicise the activities of "The Monkees", and keep them in vogue with modern communication.
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+#ABOUT THIS PROJECT: <br>
+This copy of the 'Old Monkees' is a streamlined version of the complete project to allow for hosting on github due to large file matters. The original project which will be submitted for evaluation 
+is available at https://ide.c9.io/ufedo/the-old-monkees. It contains the videos, audios, pictures and additional details of the nature and nuture of the project.
