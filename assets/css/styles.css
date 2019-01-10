@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+html {
+    font-family:"Arial", Serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    left: 0;
+    background-color: #000;
+}
+/*body {
+    background-image: url("/assets/images/firey-instrument.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+    z-index: -100;
+}*/
+/***************************************BACKGROUND VIDEO*****************************************************/
+.bg-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+/***************************************HEADER SECTION******************************************************/
+.header {
+    /**height: 100%;**/
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*.vessel {
+   min-height: 100%;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}*/
+
+/****HEADER WRAPPER****/
+.head-tie{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/****side-nav****/
+.side-nav {
+    background-color: transparent;
+    height: auto;
+    width: 120px;
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.side-nav ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+    font-size: .8em;
+    font-weight: bold;
+}
+.side-nav a{
+    text-overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    border-radius: 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+    
+}
+
+.side-nav a:hover{
+    color: #e84610;
+    width: auto;
+    background-color: /*#ffaa00;#1a1100;#664400;*/#805500;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    border-radius: 15px;
+}
+
+/****SIDE NAV CLOSE****/
+.btn-close {
+    font-size: 2em;
+    background-color:transparent;
+    font-weight: bold;
+    margin-left: 80px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/****TITLE****/
+#title{
+    padding: 20px;
+    overflow: hidden;
+    width: auto;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+#title:hover {
+    color:  #e84610; 
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/****INTERACTION: LOG IN, JOIN NOW AND PHONE**/
+.interaction{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    transform: translateX(75%);
+    margin-right: 0;
+    padding-right: 5px;
+    z-index: 1;
+}
+.interaction>ul {
+    list-style-type: none;
+    font-size: .8em;
+    font-weight: bold;
+}
+.interaction>ul>li {
+    float: left;
+    padding: 7px;
+}
+.interaction > ul > li > a {
+    color: #f1f1f1; 
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 4px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+.interaction > ul > li > a:hover{
+    background-color: white;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    margin-left: 0;
+    padding: 4px;
+    border-radius: 15px;
+}
+
+.interaction > a {
+    background-color: #ffffff;
+    color: #900A0A;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+.interaction > a:hover {
+    color: #e84610;
+    background-color: #835E5E;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+
+/****Search****/
+.search {
+    width: auto;
+    position: relative;
+    top: 0px;
+    transform: translateX(40%);
+}
+.search>a {
+    text-decoration: none;
+}
+input[type=text]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px 0 0 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=text]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+.search>button {
+    background: rgba(85,107,47, 0.8);
+    color: white;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+.search > button:hover {
+    background-color: white;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+/****Navbar****/
+.navbar{
+    text-transform: uppercase;
+    position: relative;
+    top: 0;
+    transform: translateX(30%);
+}
+
+.navbar ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar > ul > li > a {
+    float: left;
+    display: block;
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.navbar > ul > li > a:hover{
+    background-color: grey;
+    color: #e84610;
+    text-align: center;
+    border-radius: 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/****BOOKING****/
+.booking {
+    margin-left: 85%;
+    width: 10%;
+    height: 50px;
+    border-radius: 50%;
+    color: red;
+    background-color: green; 
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+}
+.booking:hover {
+    background-color: rgba(85,107,47, 0.8);
+    color: #e84610;
+    cursor:pointer;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.btn-booking {
+    position: relative;
+    transform: translateY(-110%);
+    margin-left: 45%;
+    height: 50px;
+    width: 100px;
+    background-color: green; 
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50%;
+    color: red;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.btn-booking:hover {
+    background-color: rgba(85,107,47, 0.8);
+    color: black;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/*************************************************SECTION*****************************************************/
+.section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /**top: 1%;**/
+    transform: translateY(15%);
+    padding: 0;
+}
+
+.section-container {
+
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
+    color: white;
+    overflow: hidden;
+}
+
+/****ARTICLE, ASIDE COLUMN****/
+.column{
+    float: left;
+}
+
+/****WEDDING IMG****/
+.caption-wedding {
+    margin-left: 17%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/****SOUL IMG****/
+.caption-soul {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/************************************footer******************************/
+
+.footer-vessel {
+    position: absolute;
+    transform: translateY(100%);
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    height: auto;
+   background-color: rgba(212, 212, 212, 0.1);
+   /** padding: 15px 0px;
+    
+   box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;**/
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+.footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-social-icons li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    text-align: center;
+    background: #32CD32;
+    border-radius: 100%;
+}
+
+.footer-social-icons li a {
+    color: #272727;
+    font-size: 20px;
+    display: block;
+}
+
+.footer-social-icons li a:hover{
+    color: #e86410;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer-social-icons li a i {
+    line-height: 30px;
+}
+
+.footer-menu-alpha {
+    width: 100vw;
+    height: auto;
+    margin: 0; 
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-alpha li {
+    display: inline-block;
+    margin: 0px 15px;
+     
+} 
+
+.footer-menu-alpha li a {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #7f0000;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+}
+
+.footer-menu-alpha li a:hover {
+    color: #e84610;
+    transition: color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer-menu-beta {
+    height: auto;
+    margin: auto; 
+    margin-top: 10px;
+
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-menu-beta li {
+    display: inline-block;
+    margin: 5px 15px;
+} 
+
+.footer-menu-beta li a {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(19, 76, 18, 0.9);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    transition: color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer-menu-beta li a:hover {
+    color: #e84610;
+    transition: color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer-omega {
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    font-family: arial; 
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding-right: 5px;
+    transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer-omega:hover {
+     color: #e84610;
+     transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/************************************************SHOWCASE.HTML*************************************/
+
+
+.play{
+    border-radius: 15px;
+    color: green;
+    background-color: #e86410;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.play:hover{
+    color: #e86410;
+    background-color: green;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+}
+
+audio {
+    height: 100px;
+    width: 100px;
+    background-image:url("/assets/images/firey-instrument.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15%;
+}
+
+/**************************************************Contact.HTML***********************************/
+    
+ .address {
+     margin-left: 10px;
+     height: 150px;
+     width: 250px;
+     overflow: none;
+     background-color: transparent;
+     padding: 2%;
+     border-radius: 50%;
+     font-family: "Exo",sans-serif;
+     font-weight: 600;
+     color: #fafafa;
+     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+     text-transform: uppercase;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+ .address:hover {
+     color: #000;
+     background: #e84610;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+
+ .contact-section {
+    margin-left: 15%;
+ }
+  .btn-logister {
+     height: 100px;
+     width: 200px;
+     border-radius: 50%;
+     background-color: #FF0000;
+     color: green;
+     margin: 2.5%;
+     text-transform: uppercase;
+     font-weight: bold;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+  .btn-logister:hover {
+    color: #000;
+    background-color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+ .btn-christmas {
+     height: 100px;
+     width: 200px;
+     border-radius: 50%;
+     background-color: #FF0000;
+     color: green;
+      margin: 2.5%;
+     text-transform: uppercase;
+     font-weight: bold;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+  .btn-christmas:hover {
+    color:  #000;
+    background-color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+ .btn-birthday {
+     height: 100px;
+     width: 200px;
+     border-radius: 50%;
+     background-color: #FF0000;
+     color: green;
+     margin: 2.5%;
+     text-transform: uppercase;
+     font-weight: bold;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+  .btn-birthday:hover {
+    color:  #000;
+    background-color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ .btn-feedback {
+     height: 100px;
+     width: 200px;
+     border-radius: 50%;
+     background-color: #FF0000;
+     color: green;
+     margin: 2.5%;
+     text-transform: uppercase;
+     font-weight: bold;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+ 
+  .btn-feedback:hover {
+    color:  #000;
+    background-color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+ }
+
+.login-page{
+	width: 360px;
+	padding: 10%;
+	margin: auto;
+	z-index: 1;
+}
+
+ input[type=password]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=password]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+
+ input[type=email]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=email]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+ input[type=phone]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 0 15px 15px 0;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input[type=phone]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+ input[type=submit]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    background: green;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+ select {
+    padding: .4em .4em .4em 0;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px 0 0 15px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+select:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+.form .message {
+	margin: 15px 0 0;
+	color: aliceblue;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+.form .message:hover {
+    color: #e84610;
+}
+.form .message a{
+	color: #4caf50;
+	text-decoration: none;
+}
+.form .message a:hover{
+    color: #e84610;
+}
+.form .register-form {
+	display: none;
+}
+ .form button{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	padding: 15px;
+	font-size: 14px;
+	cursor: pointer;
+    height: 20px;
+    line-height: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+    .form button:hover,.form button:active{
+    background-color:  green;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+}
+td {
+    font-weight: bold;
+    color: #ffff;
+    
+}
+td:hover{
+    color: #e86410;
+}
+
+
+/******************************************MEDIA QUERIES*****************************************************/
+@media(max-width: 860px){
+    .navbar{
+        display: none
+    }
+    .firey{
+        display: none;
+    }
+    .wedding-couples {
+      /**  display: none;**/
+    }
+    .booking {
+        display: none;
+    }
+    
+    #title{
+        font-size: .5em;
+    }
+    
+    .interaction{
+        display: none;
+    }
+}
+
+@media(min-width: 860px){
+    .open-slide{
+        display: none;
+    }
+    #title{
+        position: relative;
+        top: 0;
+        transform: translateX(2px);
+    }
+    .side-nav{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+   /*  .column { 
+    float: left;
+     }*/
+    .column-60 {
+        width: 60%;
+    }
+    .column-40 {
+        width: 40%;
+    }
+    
+    .btn-booking {
+        display: none;
+    }
+    
+    .achile {
+       display: none;
+    }
+}

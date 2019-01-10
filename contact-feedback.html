@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <style>
+    
+    body {
+    background-image: url("/assets/images/pr-image/feedback.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    z-index: -100;
+    height: 100vh;
+}
+    .feedback {
+	width: 360px;
+	padding: 10%;
+	margin: auto;
+	z-index: 1;
+}
+
+input[type=text]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=text]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+input[type=email]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=email]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+input[type=phone]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=phone]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+input[type=date]{
+    padding: .4em;
+    border: none;
+    font-size: .8em;
+    color: #000;
+    border-radius: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=date]:hover{
+    background: #B6B3B3;
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+button {
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    background-color:#e84610;
+    color:#000; 
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: #e84610;
+    background: #000;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+.bkg-feedback {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.bkg-feedback:hover {
+    color: #e84610;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+textarea {
+    border-radius: 5px;
+}
+    </style>
+    <title>FEEDBACK FORM</title>
+     <style type="text/css" href="/assets/css/styles.css"></style>
+</head>
+<body>
+    <div class="feedback">
+        <form class="bkg-feedback">
+            <table>
+                <tr>
+                    <td>
+			            Name:     <input type="text" placeholder="name" required="required"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			           Surname:   <input type="text" placeholder="surname" required="required"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			           Email:      <input type="email" id="" pattern="" placeholder="email" required="required"/>
+		        	</td>
+			    </tr>
+			    <tr>
+			        <td>
+			            Phone:     <input type="phone" placeholder="1023***" required="required"/>
+			        </td>
+		    	</tr>
+		    	<tr>
+		    	    <td>
+			             Country:  <input type="text" placeholder="country"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            Date:     <input type="date" placeholder="date" require="required"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <textarea rows="" column="" placeholder="enter message">
+			                
+			            </textarea>
+			        </td>
+			    </tr>
+			</table>
+			<button>send</button>
+	    </form>
+	</div>
+	
+</body>
+</html>
