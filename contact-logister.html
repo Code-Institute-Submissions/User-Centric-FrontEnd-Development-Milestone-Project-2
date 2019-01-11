@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
@@ -38,19 +38,14 @@
     		-webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     		font-weight: bold;
 			}
-		.footer-vessel{
-			position: fixed;
-			bottom: 0px;
-			margin-left: auto;
-			width: 100%;
-			}
+		
  	</style>
     <title>Login and Registration Form</title>
 </head>
 <body>
     <div class="bg-video-logister">
-	  <video loop muted autoplay poster="img/videoframe" class="bg-video-logister">
-	  	<source src="/assets/videos/coffee-smoke.mp4" type="video/mp4">
+	  <video loop muted class="bg-video-logister">
+	  	<source src="/assets/video/pr-video/coffee-smoke.mp4" type="video/mp4">
 	    <source src="/assets/videos/coffee-smoke.webm" type="video/webm">
 	  	<source src="/assets/videos/coffee-smoke.ogg" type="video/ogg">
 	  </video>
@@ -64,7 +59,7 @@
 							Name:
 						</td>
 						<td>
-							<input type="text" placeholder="Name" name="">
+							<input type="text" placeholder="Name">
 						</td>
 					</tr>
 					<tr>
@@ -72,7 +67,7 @@
 							Password:
 						</td>
 						<td>
-							<input type="password" placeholder="password" name="">
+							<input type="password" placeholder="Password">
 						</td>
 					</tr>
 					<tr>
@@ -90,7 +85,7 @@
 							Email:
 						</td>
 						<td>
-							<input type="email" placeholder="Email" name="">
+							<input type="email" placeholder="Email">
 						</td>
 					</tr>
 					<tr>
@@ -344,12 +339,12 @@
 						</select>
 					</td>
 					<td>
-						<input type="Phone" placeholder="1023****" name="">
+						<input type="number" placeholder="1023****">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input type="Submit" value="Register" name="">
+						<input type="Submit" value="Register">
 					</td>
 				</tr>
 			</table>
@@ -363,47 +358,30 @@
 		</form>
 		</div>
 	</div>
-    <footer class="footer-vessel">
-		<div class="footer-container">
-			<div class="footer-social-icons">
-				<ul class="list-inline social-links">
-					<li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
-					<li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-			<!--/--social-->
-			<div class="footer-menu-alpha">
-				<ul>
-					<li><a href="home.html">Home</a></li>
-					<li><a href="showcase.html">Showcase</a></a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="service.html">Our Services</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-			<!--/alpha-->
-			<div class="footer-menu-beta">
-				<ul>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">News</a></a>
-					</li>
-					<li><a href="showcase.html">Gallery</a></li>
-					<li><a href="#">Media</a></li>
-				</ul>
-				<div class="footer-omega">
-	  				<p class="copyrights">&copy; All Rights Reserved, Achile Isahokolo 2018.</p>
-				</div>
-			</div>
-			<!--/--beta-->
-		</div>
-		<!--/-footer-container-->
+    <footer class="footer-vessel" style="background-color: black">
+		<ul class="footer-social-icons">
+			<li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+			<li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+			<li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+		<ul class="footer-menu-alpha">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="showcase.html">Showcase</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="service.html">Our Services</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<ul class="footer-menu-beta">
+		    <li><a href="#">Blog</a></li>
+		    <li><a href="#">News</a></li>
+			<li><a href="showcase.html">Gallery</a></li>
+			<li><a href="#">Media</a></li>
+		</ul>
+			<p class="footer-omega">&copy; All Rights Reserved, Achile Isahokolo 2018.</p>
 	</footer>
-	
-	<!--/--omega-->
  
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 	<script>

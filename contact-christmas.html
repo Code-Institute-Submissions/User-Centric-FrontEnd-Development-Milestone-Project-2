@@ -1,208 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
+
     <style>
-    
-    body {
-    background-image: url("/assets/images/pr-image/chrismas.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.9;
-    z-index: -100;
-    height: 100vh;
-}
-    .christmas {
-	width: 360px;
-	padding: 10%;
-	margin: auto;
-	z-index: 1;
-}
+        body {
+            background-image: url("/assets/images/pr-image/chrismas.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            opacity: 0.9;
+            z-index: -100;
+            height: 100vh;
+        }
 
-input[type=text]{
-    padding: .4em;
-    border: none;
-    font-size: .8em;
-    color: #000;
-    border-radius: 15px;
-    width: 150px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        .christmas {
+            width: 360px;
+            padding: 10%;
+            margin: auto;
+            z-index: 1;
+        }
 
-input[type=text]:hover{
-    background: #B6B3B3;
-    color: #e84610;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
+        input[type=text] {
+            padding: .4em;
+            border: none;
+            font-size: .8em;
+            color: #000;
+            border-radius: 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-input[type=email]{
-    padding: .4em;
-    border: none;
-    font-size: .8em;
-    color: #000;
-    border-radius: 15px;
-    width: 150px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        input[type=text]:hover {
+            background: #B6B3B3;
+            color: #e84610;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
-input[type=email]:hover{
-    background: #B6B3B3;
-    color: #e84610;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
+        input[type=email] {
+            padding: .4em;
+            border: none;
+            font-size: .8em;
+            color: #000;
+            border-radius: 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-input[type=phone]{
-    padding: .4em;
-    border: none;
-    font-size: .8em;
-    color: #000;
-    border-radius: 15px;
-    width: 150px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        input[type=email]:hover {
+            background: #B6B3B3;
+            color: #e84610;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
-input[type=phone]:hover{
-    background: #B6B3B3;
-    color: #e84610;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
+        input[type=phone] {
+            padding: .4em;
+            border: none;
+            font-size: .8em;
+            color: #000;
+            border-radius: 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-input[type=date]{
-    padding: .4em;
-    border: none;
-    font-size: .8em;
-    color: #000;
-    border-radius: 15px;
-    width: 150px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        input[type=phone]:hover {
+            background: #B6B3B3;
+            color: #e84610;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
-input[type=date]:hover{
-    background: #B6B3B3;
-    color: #e84610;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
-button {
-    border-radius: 15px;
-    width: 80px;
-    height: 30px;
-    background-color:#e84610;
-    color:#000; 
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
+        input[type=date] {
+            padding: .4em;
+            border: none;
+            font-size: .8em;
+            color: #000;
+            border-radius: 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-button:hover {
-    color: #e84610;
-    background: #000;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    font-weight: bold;
-}
+        input[type=date]:hover {
+            background: #B6B3B3;
+            color: #e84610;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
-.bkg-christmas {
-    font-weight: bold;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-}
+        button {
+            border-radius: 15px;
+            width: 80px;
+            height: 30px;
+            background-color: #e84610;
+            color: #000;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
-.bkg-christmas:hover {
-    color: #fff;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
-}
-textarea {
-    border-radius: 5px;
-}
+        button:hover {
+            color: #e84610;
+            background: #000;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            font-weight: bold;
+        }
 
+        .bkg-christmas {
+            font-weight: bold;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+        }
+
+        .bkg-christmas:hover {
+            color: #fff;
+            transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+            -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+        }
+
+        textarea {
+            border-radius: 5px;
+        }
     </style>
     <title>CHRISTMAS BOOKING FORM</title>
 </head>
+
 <body>
     <div class="christmas">
         <form class="bkg-christmas">
             <table>
                 <tr>
                     <td>
-			            Name:     <input type="text" placeholder="name" required="required"/>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>
-			           Surname:   <input type="text" placeholder="surname" required="required"/>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>
-			           Email:      <input type="email" id="" pattern="" placeholder="email" required="required"/>
-		        	</td>
-			    </tr>
-			    <tr>
-			        <td>
-			            Phone:     <input type="phone" placeholder="1023***" required="required"/>
-			        </td>
-		    	</tr>
-		    	<tr>
-		    	    <td>
-			             Country:  <input type="text" placeholder="country"/>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>
-			            Date:     <input type="date" placeholder="date" require="required"/>
-			        </td>
-			    </tr>
-			    <tr>
-			        <td>
-			            <textarea rows="" column="" placeholder="enter message">
-			                
-			            </textarea>
-			        </td>
-			    </tr>
-			</table>
-			<button>send</button>
-	    </form>
-	</div>
+                        Name: <input type="text" placeholder="name" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Surname: <input type="text" placeholder="surname" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email: <input type="email" placeholder="email" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone: <input type="number" placeholder="1023***" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country: <input type="text" placeholder="country" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date: <input type="date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea placeholder="enter message"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button>send</button>
+        </form>
+    </div>
+
+    <footer class="footer-vessel">
+        <ul class="footer-social-icons">
+            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <ul class="footer-menu-alpha">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="footer-menu-beta">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="showcase.html">Gallery</a></li>
+            <li><a href="#">Media</a></li>
+        </ul>
+        <p class="footer-omega">&copy; All Rights Reserved, Achile Isahokolo 2018.</p>
+    </footer>
+
+
 </body>
+
 </html>
