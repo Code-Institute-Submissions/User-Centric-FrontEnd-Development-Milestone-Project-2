@@ -1,0 +1,31 @@
+#THE OLD MONKEES: 
+This project work, "THE OLD MONKEES" was written in partial fulfillment of the requirements for user centric frontend development.
+It intends to provide a forum for interaction between "The Monkees", which is 1960s Rock Band and their existing and prospective fan base. In pursuiant of this objective, it provides facilities,
+and in itself serve as a showcase for their music/songs, pictures and videos. It also serve as a forum to fraternize with exiting members of their fan club and a callout to fans who may wish to sign up to
+their services.<br>
+In addition, the Old Monkees has utilized current technologies of HTML5 to help publicise the activities of "The Monkees", and keep them in vogue with modern communication.
+
+#ABOUT THIS PROJECT: 
+This copy of the 'Old Monkees' is a streamlined version of the complete project to allow for hosting on github due to large file matters. The original project which will be submitted for evaluation 
+is available at https://ide.c9.io/ufedo/the-old-monkees. It contains the videos, audios, pictures and additional details of the nature and nuture of the project.
+
+#GITHUB REJECTION CODE:
+I have included the following github error code in respect to my inablity to host my complete project on github for your information and consideration
+ufedo:~/workspace (master) $ git remote add origin https://github.com/AchileAchile/user-centric.git
+ufedo:~/workspace (master) $ git push -u origin master
+Username for 'https://github.com': AchileAchile
+Password for 'https://AchileAchile@github.com': 
+Counting objects: 240, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (203/203), done.
+Writing objects: 100% (240/240), 393.52 MiB | 1.35 MiB/s, done.
+Total 240 (delta 93), reused 0 (delta 0)
+remote: Resolving deltas: 100% (93/93), done.
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: 9b36ee72eaea6e4ca7ab7717336b315f
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File assets/videos/escalator.mov is 321.06 MB; this exceeds GitHub's file size limit of 100.00
+To https://github.com/AchileAchile/user-centric.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/AchileAchile/user-centric.git'
+ufedo:~/workspace (master) $ 

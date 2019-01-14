@@ -83,7 +83,7 @@ body {
     font-weight: bold;
 }
 .side-nav a{
-    text-overflow: hidden;
+    overflow: hidden;
     padding: 5px 5px 5px 5px;
     text-decoration: none;
     color: #ccc;
@@ -226,7 +226,7 @@ input[type=text]{
     color: #000;
     border-radius: 15px 0 0 15px;
     width: 150px;
-    text-transform: uppercase;
+   /** text-transform: uppercase;**/
     font-weight: bold;
 }
 
@@ -486,7 +486,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     
-    transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
@@ -554,8 +554,8 @@ a {
     letter-spacing: 1px;
     text-decoration: none;
     padding-right: 5px;
-    transition: color background-color .5s ease-in-out, color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    -o-transition: background-color.5s ease-in-out, color .5s ease-in-out;
     -ms-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
@@ -563,7 +563,7 @@ a {
 
 .footer-omega:hover {
      color: #e84610;
-     transition: color background-color .5s ease-in-out, color .5s ease-in-out;
+     transition: background-color .5s ease-in-out, color .5s ease-in-out;
     -ms-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
     -o-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
     -moz-transition: color background-color .5s ease-in-out, color .5s ease-in-out;
@@ -612,7 +612,7 @@ audio {
      margin-left: 10px;
      height: 150px;
      width: 250px;
-     overflow: none;
+     overflow: hidden;
      background-color: transparent;
      padding: 2%;
      border-radius: 50%;
@@ -758,7 +758,6 @@ audio {
     color: #000;
     border-radius: 15px;
     width: 150px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -781,7 +780,6 @@ input[type=password]:hover{
     color: #000;
     border-radius: 15px;
     width: 150px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -796,7 +794,7 @@ input[type=email]:hover{
     font-weight: bold;
 }
 
- input[type=phone]{
+    input[type=number]{
     padding: .4em;
     border: none;
     font-size: .8em;
@@ -806,7 +804,7 @@ input[type=email]:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
-input[type=phone]:hover{
+input[type=number]:hover{
     background: #B6B3B3;
     color: #e84610;
     transition: background-color .5s ease-in-out, color .5s ease-in-out;
@@ -816,6 +814,7 @@ input[type=phone]:hover{
     -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
     font-weight: bold;
 }
+
  input[type=submit]{
     padding: .4em;
     border: none;
@@ -843,7 +842,6 @@ input[type=submit]:hover{
     color: #000;
     border-radius: 15px 0 0 15px;
     width: 100px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 select:hover{
