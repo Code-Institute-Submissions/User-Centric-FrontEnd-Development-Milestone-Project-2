@@ -136,7 +136,7 @@ The tehnologies used for the design of this app are:
 DEPLOYMENT
 ----------
 A streamlined version of this app is has been deployed to github at the following url:
-https://github.com/AchileAchile/User-Centric-FrontEnd-Development-Milestone-Project
+https://github.com/AchileAchile/user-centric.git
 
 
 CREDIT:
