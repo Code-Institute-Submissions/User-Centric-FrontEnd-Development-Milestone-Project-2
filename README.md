@@ -151,6 +151,10 @@ CREDIT:
 +   https://www.pexels.com/
     +additional pictures are obtained from pexels.com
 
++ wikipedia
+ + https://en.wikipedia.org/wiki/The_Monkees
+ + information about the Monkees is obtained from the wikipedia
+
 ACKNOLEDGEMENT
 --------------
 This project work is modelled according the code institute training instruction.
